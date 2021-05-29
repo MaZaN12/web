@@ -5,6 +5,6 @@
     <title>Welcome</title>
 </head>
 <body>
-    <c:redirect url="form/logPage.jsp"/>
+    <c:redirect url="form/home.jsp"/>
 </body>
 </html>

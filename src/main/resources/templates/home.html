@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" th:href="@{/home/table.css}">
+    <link rel="stylesheet" th:href="@{/home/search.css}">
+    <link rel="stylesheet" th:href="@{/headerStyle.css}">
+    <link rel="stylesheet" th:href="@{/generatingButtonStyle.css}">
+</head>
+
+<header th:insert="blocks/header :: header"/>
+
+<body>
+    <div class="table" id="scroll">
+        <h1>Last 50 factors</h1>
+        <table>
+            <thead>
+            <tr>
+                <td> № </td>
+                <td> Name </td>
+                <td> Specialty </td>
+                <td> Salary </td>
+            </tr>
+            </thead>
+            <div th:each="el : ${user}">
+                <tr class="user">
+                    <td th:text="${el.id}"/>
+                    <td th:text="${el.name}"/>
+                    <td th:text="${el.specialty}"/>
+                    <td th:text="${el.salary}"/>
+                </tr>
+            </div>
+        </table>
+    </div>
+
+</body>
+
+<form class="search" action="/" method="post">
+    <div>
+        <input type="text" name="fromDate" placeholder="From" value="">
+        <input type="text" name="beforeDate" placeholder="Before" value="">
+    </div>
+    <div>
+        <input type="submit" value="Push">
+    </div>
+</form>
+
+</html>

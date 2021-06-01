@@ -1,0 +1,16 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" th:href="@{/login/login.css}">
+</head>
+<body>
+<form class="box" action="/home" method="post">
+    <h1>Login</h1>
+    <input type="text" name="name" placeholder="Username" value="" required >
+    <input type="password" name="password" placeholder="Password" value="" required>
+    <input type="submit" name="" value="Login">
+    <a href="/registration">Registration</a>
+</form>
+</body>
+</html>

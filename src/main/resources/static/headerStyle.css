@@ -1,0 +1,45 @@
+/*main buttons*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+}
+.header{
+    float: top;
+    background-color: #191919;
+    width: 100%;
+    height: 60px;
+}
+.header .headerButton[type = "submit"]{
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.header .headerButton[type = "submit"]:hover{
+    background: #2ecc71;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

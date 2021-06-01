@@ -1,0 +1,27 @@
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background: #191919;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    overflow: auto;
+    height: 750px;
+    width: 700px;
+    padding: 10px;
+    text-align: center;
+}
+.table div{
+    margin-top: 5px;
+}
+
+#scroll::-webkit-scrollbar {
+    width: 10px;
+    background: none;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #3498db;
+}

@@ -1,0 +1,54 @@
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background: #191919;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    overflow: auto;
+    height: 600px;
+    width: 800px;
+    padding: 10px;
+}
+.table thead tr {
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.table th,
+.table td {
+    padding: 12px 15px;
+
+}
+.user{
+    color: #6e7071;
+}
+
+#scroll::-webkit-scrollbar {
+    width: 10px;
+    background: none;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #3498db;
+}
+.pagination {
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 30%;
+}
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+.pagination a:hover {
+    background-color: #4CAF50;
+    transition: background-color .4s;
+}

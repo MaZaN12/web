@@ -1,0 +1,32 @@
+.table input[type = "text"]{
+    background: none;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.table input[type = "text"]:focus{
+    border-color: #2ecc71;
+}
+
+.table input[type = "submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.table input[type = "submit"]:hover{
+    background: #2ecc71;
+}

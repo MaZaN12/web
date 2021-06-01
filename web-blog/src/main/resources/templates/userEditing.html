@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>User Editing</title>
+    <link rel="stylesheet" th:href="@{/blocks/headerStyle.css}">
+    <link rel="stylesheet" th:href="@{/userEditing/table.css}">
+    <link rel="stylesheet" th:href="@{/userEditing/buttons.css}">
+    <link rel="stylesheet" th:href="@{/userEditing/buttonSearch.css}">
+</head>
+<body>
+
+    <header th:insert="blocks/header :: header"/>
+
+    <form class="table" id="scroll" action="#" method="">
+<!--      <div th:each="el : ${res}">-->
+        <div class="user">
+          <h5>User</h5>
+          <input type="text" name="phone_number" placeholder="Phone" value="" required>
+          <input type="text" name="last_name" placeholder="Last Name" value="" required>
+          <input type="text" name="first_name" placeholder="First Name" value="" required>
+        </div>
+        <div class="passport">
+          <h5>Passport</h5>
+          <input type="text" name="series_number" placeholder="Series Number" value="" required>
+          <input type="text" name="date" placeholder="Date" value="" required>
+          <input type="text" name="issuer" placeholder="Issuer" value="" required>
+        </div>
+        <div class="address">
+          <h5>Address</h5>
+          <input type="text" name="county" placeholder="Country" value="" required>
+          <input type="text" name="city" placeholder="City" value="" required>
+          <input type="text" name="street" placeholder="Street" value="" required>
+          <input type="text" name="house" placeholder="House" value="" required>
+          <input type="text" name="flat" placeholder="Flat" value="" required>
+        </div>
+        <input type="submit" name="" value="Save">
+<!--      </div>-->
+    </form>
+
+    <form action="/userEditing" method="get">
+        <div class="button">
+            <input type="number" name="id" placeholder="Find by ID">
+        </div>
+    </form>
+
+</body>
+</html>
